@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>My Mobile App Website</title>
+   <!-- <link rel="stylesheet" href="style.css"> -->
+   <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+ }
+ header {
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    position: relative;
+ }
+ nav {
+    background-color: rgba(45, 43, 43, 0.881);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+ }
+ .logo img {
+    height: 50px;
+    margin-right: 20px;
+ }
+ nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ nav li {
+    list-style: none;
+    margin: 0 10px;
+ }
+ nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+ }
+ nav a:hover {
+    color: #e3e3e3;
+ }
+ .header-content {
+    margin-top: 100px;
+ }
+ h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+ }
+ .download-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #666;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+ }
+ .download-button:hover {
+    background-color: #333;
+    color: #fff;
+ }
+ .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background-color: #f3f3f3;
+ }
+ .about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+ }
+ .about-content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+ }
+ .learn-more-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+ }
+ .learn-more-button:hover {
+    background-color: #666;
+ }
+ .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+ }
+ .features {
+    padding: 80px;
+    text-align: center;
+    background-color: #fff;
+ }
+ .features h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+ }
+ .feature {
+    display: inline-block;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+ }
+ .feature img {
+    height: 80px;
+    margin-bottom: 20px;
+ }
+ .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+ }
+ .feature p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+ }
+ .download {
+    padding: 80px;
+    text-align: center;
+    background-color: #f3f3f3;
+ }
+ .download h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+ }
+ .download p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+ }
+ .contact {
+    padding: 80px;
+    text-align: center;
+    background-color: #fff;
+ }
+ .contact h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+ }
+ contact form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ contact input[type="text"], contact input[type="email"], contact textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+ }
+ contact textarea {
+    height: 200px;
+ }
+ contact button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+ }
+ contact button[type="submit"]:hover {
+    background-color: #666;
+ }
+ footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+ }
+ </style>
+</head>
+<body>
+   <header>
+      <nav class="main">
+         <div class="logo">
+            <img style="border-radius: 100%;" src="https://cdn.dribbble.com/users/6569/screenshots/16169741/media/851c7266882dcfcf51a7370fae1d5af1.png?resize=400x0" alt="My Mobile App Logo">
+         </div>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+         <div class="clearfix"></div>
+      </nav>
+      <div class="header-content">
+         <h1>My Mobile App</h1>
+         <p>The best mobile app for your daily needs.</p>
+         <a href="#" class="download-button">Download Now</a>
+      </div>
+   </header>
+   <section class="about">
+      <div class="about-content">
+         <h2>About My Mobile App</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet justo ut enim tristique mollis. Curabitur porttitor eget elit eget mattis. Vivamus sed viverra mauris. Maecenas vel lectus eget turpis sagittis malesuada. Fusce elementum nibh id diam tempor convallis. Sed enim eros, placerat non tincidunt vel, faucibus in leo.</p>
+         <a href="#" class="learn-more-button">Learn More</a>
+      </div>
+      <div class="about-image">
+         <img src="https://cdn.acumatica.com/media/2022/06/Mobile-e1654548658830.jpg" alt="About My Mobile App">
+      </div>
+      <div class="clearfix"></div>
+   </section>
+   <section class="features">
+      <h2>Features</h2>
+      <div class="feature">
+         <img src="https://www.igeeksblog.com/wp-content/uploads/2022/10/Walli.jpg" alt="Feature 1">
+         <h3>Feature 1</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+         <img src="feature-2.svg" alt="Feature 2">
+         <h3>Feature 2</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+         <img src="feature-3.svg" alt="Feature 3">
+         <h3>Feature 3</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="clearfix"></div>
+   </section>
+   <section class="download">
+      <h2>Download My Mobile App</h2>
+      <p>Get the best mobile app now and enjoy all the features.</p>
+      <a href="#" class="download-button">Download Now</a>
+   </section>
+   <section class="contact">
+      <h2>Contact Us</h2>
+      <form>
+         <input type="text" placeholder="Name" name="name">
+         <input type="email" placeholder="Email" name="email">
+         <textarea placeholder="Message" name="message"></textarea>
+         <button type="submit">Send Message</button>
+      </form>
+   </section>
+   <footer>
+      <p>Copyright © 2021 My Mobile App.</p>
+   </footer>
+   <script src="script.js">
+    const currentLocation = location.href;
+const navLinks = document.querySelectorAll('nav ul li a');
+const navLength = navLinks.length;
+for (let i = 0; i < navLength; i++) {
+   if (navLinks[i].href === currentLocation) {
+      navLinks[i].className = 'active';
+   }
+}
+
+// Add class to the nav menu on scroll
+window.addEventListener('scroll', function() {
+   const nav = document.querySelector('nav');
+   nav.classList.toggle('sticky', window.scrollY > 0);
+});
+
+// Smooth scroll animation
+const scrollElements = document.querySelectorAll('.scroll-to');
+scrollElements.forEach((el) => {
+   el.addEventListener('click', (event) => {
+      event.preventDefault();
+      const target = document.querySelector(el.getAttribute('href'));
+      smoothScroll(target);
+   });
+});
+function smoothScroll(target) {
+   const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+   const startPosition = window.pageYOffset;
+   const distance = targetPosition - startPosition;
+   const duration = 800;
+   let start = null;
+   window.requestAnimationFrame(step);
+   function step(timestamp) {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+      if (progress < duration) window.requestAnimationFrame(step);
+   }
+}
+function easeInOutCubic(t, b, c, d) {
+   t /= d/2;
+   if (t < 1) return c/2*t*t*t + b;
+   t -= 2;
+   return c/2*(t*t*t + 2) + b;
+}
+   </script>
+</body>
+</html>
