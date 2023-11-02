@@ -98,4 +98,41 @@
 
 console.log(typeof(a));
 
+let time = 2
+if(time>=1 && time<=12){
+console.log("good morning");
+}
+else if(time>=12 && time<=17){
+    console.log("good afternoon");
+}
+else if(time>=17 && time<=20)
+{
+    console.log("good evening");
+}
+else if(time>=20 && time<=24){
+    console.log("good night");
+}
+else{
+    console.log("please enter right value");
+}
+ 
+
+
+var avg = 90
+if(avg>=1 && avg<=33){
+    console.log("grade : fail");
+}
+else if(avg>=33 && avg<=45){
+    console.log("grade : therd");
+}
+else if(avg>=45 && avg<=60){
+    console.log("grade : second");
+}
+else if(avg>=60 && avg<=80){
+    console.log("grade : frist");
+}
+else if(avg>=80 && avg<=100){
+    console.log("grade : top");
+}
+
 
