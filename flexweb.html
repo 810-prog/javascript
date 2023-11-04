@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 70px;
+            background-color: rgba(194, 199, 204, 0.607);
+            flex-wrap: wrap;
+            /* position: fixed; */
+        }
+
+        #div1 {
+            display: inline-block;
+
+            flex-wrap: wrap;
+            /* bottom:1  0px ; */
+            position: relative;
+            left: 10px;
+
+        }
+
+        #div2 {
+            display: flex;
+            position: relative;
+            bottom: 30px;
+            left: 40%;
+            flex-wrap: wrap;
+        }
+
+        #div3 {
+            /* display: inline-block; */
+            display: flex;
+            position: relative;
+            left: 98%;
+            bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .snavbar {
+            display: flex;
+            width: 30px;
+            position: relative;
+            left: 44%;
+            top: px;
+            flex-wrap: wrap;
+            /* object-fit: contain; */
+
+        }
+
+        #dk {
+            width: 100%;
+            height: 700px;
+
+        }
+
+        .main1 {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            display: inline-block;
+            position: relative;
+            bottom: 500px;
+            left: 100px;
+            /* text-align: center; */
+
+
+        }
+
+        #a1 {
+            color: #ffffff !important;
+            font-weight: 400;
+            font-size: 4.5rem;
+            line-height: 1.1;
+            font-family: montserrat, sans-serif;
+            position: relative;
+            bottom: 20px;
+        }
+
+        #a2 {
+            color: #ffffff !important;
+            font-weight: 1;
+            font-size: 1.1rem;
+            line-height: 1.1;
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+        
+        }
+
+        #a3 {
+            color: #ffffff !important;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 35px auto 0 0;
+            padding: 23px 54px 24px 52px;
+            background-color: #52b1e3;
+            color: #e6e6e6;
+            border-radius: 50px;
+            position: relative;
+            top: 10px;
+        }
+
+        #a3:hover {
+            color: #ffffff !important;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 35px auto 0 0;
+            padding: 23px 54px 24px 52px;
+            background-color: #29729a;
+            color: #e6e6e6;
+            border-radius: 50px;
+            cursor: pointer;
+            position: relative;
+            top: 10px;
+        }
+/* 
+        .main2{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            right: 150px;
+            bottom:100px;
+
+        } */
+
+        #bb1 {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            bottom: 300px;
+            text-align: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 2.25rem;
+            line-height: 1.4;
+            font-family: Montserrat, sans-serif;
+            color: inherit;
+        }
+
+        #bb2 {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            bottom: 280px;
+            text-align: center;
+            justify-content: center;
+            font-weight: 200;
+            font-size: 1.0rem;
+            line-height: 1.4;
+            font-family: Montserrat, sans-serif;
+            color: inherit;
+        }
+
+        #bb3 {
+             display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            bottom: 250px;
+            background-color: #52b1e3;
+            border-radius: 50px;
+            padding:  23px 54px 24px 52px;
+            font-weight: 700;
+            color: #e6e6e6;
+        }
+
+        .main3{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .abc1 {
+            width: 50%;
+        }
+
+        .abc2{
+            width: 400px;
+
+            height: 400px;
+            background-size: cover;
+            background-image: url("https://assets.nicepagecdn.com/11a8ddce/3814288/images/top-close-up-view-plate-tablecloth-white-plate-stuffed-cabbage-with-herbs-lemon-sauce-grey-tablecloth-left-side-dark-table.png");
+
+            }
+
+            @media (max-width :375px) and (min-width: 100px) {
+            .abc2 {
+                width: 300px;
+
+                height: 300px;
+            }
+            }
+
+            @media (max-width :300px) and (min-width: 100px) {
+            .abc2 {
+                width: 200px;
+
+                height: 200px;
+            }
+            }
+
+            .main4 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+
+        }
+
+        .dd1 {
+            background-image: url("https://assets.nicepagecdn.com/11a8ddce/3814288/images/top-view-delicious-cooked-eggplants-with-rice-lemon-feijoa-dark-surface-dinner-food-cooking-oil-rice-meal.png");
+            width: 400px;
+            height: 400px;
+            background-size: cover;
+            
+        }
+
+        .dd2 {
+
+            width: 50%;
+        }
+
+
+        @media (max-width :375px) and (min-width: 100px) {
+            .dd1 {
+                width: 300px;
+
+                height: 300px;
+            }
+        }
+
+        @media (max-width :300px) and (min-width: 100px) {
+            .dd1 {
+                width: 200px;
+
+                height: 200px;
+            }
+        }
+
+        .main5 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-evenly;
+            width: 100%;
+            gap: 10px;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <section class="navbar">
+        <div class="nav" id="div1">
+            <img src="//csite.nicepage.com/Images/logo-w.png" alt="">
+        </div>
+        <div class="nav" id="div2">
+            <a href=""><img src="1.png" alt=""></a>
+            <a href=""> <img src="2.png" alt=""></a>
+            <a href=""><img src="3.png" alt=""></a>
+            <a href=""><img src="4.png" alt=""></a>
+            <a href=""><img src="5.png" alt=""></a>
+        </div>
+        <div class="nav" id="div3">
+            <a href=""><img src="6.png" alt=""></a>
+        </div>
+    </section>
+    <section class="snavbar">
+        <img id="img2" src="bars-solid.svg" alt="">
+    </section>
+    <div class="main">
+        <img id="dk"
+            src="//images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/af618d2b05fd5604ad8c8cad/top-view-fresh-cabbage-salad-inside-plate-dark-background1.jpg"
+            alt="">
+
+        <div class="main1">
+            <div>
+                <h1 id="a1">Yummy. <br> Fast. <br> Available.</h1>
+            </div>
+
+            <div>
+                <span id="a2">Open for over 15 years, our restaurant near LAX has built a strong <br> reputation on big
+                    taste and bold
+                    flavors, earning it ra​ves from locals <br> and travelers alike.</span>
+            </div>
+            <div>
+               <center> <button id="a3">ORDER ONLINE</button></center>
+            </div>
+        </div>
+        <div class="main2">
+            <h1 id="bb1">Modern approach to classic recipes</h1>
+            <p id="bb2">We welcome you to a delicious feast of exquisite dishes. With  a wide range of world cuisines to
+                choose from, <br> we guarantee you a sumptuous feast experience in our restaurant! Here you will dive into a
+                friendly and <br> romantic atmosphere and enjoy our haute cuisine. With our great selection of dishes from
+                all over the world <br> you can feel yourself as a traveler and true gourmet!</p>
+              <center><button id="bb3" >ORDER ONLINE</button></center>  
+        </div>
+        <div class="main3">
+            <div class="abc1">
+                <p style="font-size: 2em;">Main Menu</p>
+                <h5>GARLIC SHRIMP & TONNARELLI PASTA</h5>
+                <p><b>$19.99</b></p>
+                <p>
+                    Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                    <br>
+                    <h5>GRILLED HANGER STEAK </h5>
+                    <p><b>$25.50</b></p>
+                    <p>
+                        Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                    <br>
+                    <h5>PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI</h5>
+                    <p><b>$15.50</b></p>
+                    <p>
+                        Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                        <br>
+                        <h5>GRILLED FREE RANGE CHICKEN SALAD </h5>
+                        <p><b>$19.99</b></p>
+                         <p>Mesclun greens, pepperjack cheese, bacon, avocado, corn, tomato, cucumbers</p>
+                        <br>
+                        <h5> GRILLED BBQ BABY BACK RIBS</h5>
+                        <p><b>$23.00</b></p>
+                        <p>Hibiscus sweet ranch coleslaw, hand cut fries </p>
+            </div>
+            <div class="abc2">
+              
+            </div>
+    
+        </div>
+        
+     <br><br><br><br>
+    <br><br><br><br>
+
+    <div class="main4">
+
+        <div class="dd1">
+
+        </div>
+        <div class="dd2">
+            <h5>GARLIC SHRIMP & TONNARELLI PASTA</h5>
+            <p><b>$19.99</b></p>
+            <p>
+                Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+            <br>
+            <h5>ITALIAN TASTING PLATTER </h5>
+            <p><b>$25.50</b></p>
+            <p>
+                Three Italian Favorites: Baked Clams, Fried Calamari and Stuffed Shrimp</p>
+            <br>
+            <h5>PAN ROASTED ‘FLORIDA KEYS’ MAHI MAHI</h5>
+            <p><b>$15.50</b></p>
+            <p>
+                Serrano ham, spinach, roasted red peppers, tomato, pil pil sauce</p>
+                <br>
+            <h5>CRAB CONGEE</h5>
+            <p><b>$19.99</b></p>
+            <p>
+                Biscuits with fresh sausage patties & country gravy</p>
+                <br>
+            <h5>
+                SALT AND PEPPER CALAMARI</h5>
+                <p><b>$23.00</b></p>
+                <p>
+                    Rocket, lime, chipotle aioli</p>
+            </div>
+    
+            </div>
+        </div>
+    </body>
+    
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             

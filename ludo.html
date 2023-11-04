@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing:border-box;
+}
+
+.main{
+    border: 4px solid rgb(234, 179, 14);
+    width: 600px;
+    height: 900px;
+    position: relative;
+    left: 400px;
+    bottom: -90px;
+    background-image: url(https://pbs.twimg.com/ext_tw_video_thumb/1668571761380655106/pu/img/IdbVKwF_mbkLnnks.jpg);
+}
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    top: 190px;
+}
+
+#header{
+    border: 4px solid rgb(249, 216, 6);
+    transform: rotate(-6deg);
+    text-align: center;
+    position: relative;
+    top: 90px;
+    color: rgb(246, 197, 0);
+    font-style: italic;
+    font-size: 60px;
+    background-color:rgb(46, 46, 157);
+
+}
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+    border: none;
+}
+.yellow {
+    background-color:yellow;
+    border: none;
+}
+.blue {
+    background-color:blue;
+    border: none;
+}
+
+.house {
+    display: inline-block;
+    position: absolute;
+    width:40%;
+    height:40%;
+    padding:7%;
+}
+.box {
+    position: relative;
+    width:100%;
+    height:100%;
+    background-color:white;
+    padding:20%;
+}
+.square {
+    position: absolute;
+    width:25%;
+    height:25%;
+
+}
+.square-one {
+    top:20%;
+    left:20%;
+    border-radius: 100%;
+}
+
+.square-two {
+    top: 20%;
+    right: 20%;
+    border-radius: 100%;
+}
+.square-three {
+    bottom: 20%;
+    left: 20%;
+    border-radius: 100%;
+}
+.square-four {
+    bottom: 20%;
+    right: 20%;
+    border-radius: 100%;
+}
+.home {
+    position: absolute;
+    top:40%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    background-image: conic-gradient(from 135deg,red 0deg 90deg,green 90deg 180deg,yellow 180deg 270deg,#29b6f6 270deg 360deg);
+}
+.cells {
+    position: absolute;
+    width: 6.66% ;
+    height: 6.66%;
+    border-collapse: collapse;
+    /* border: 1px solid #e5e5e569 ; */
+    border: 1px solid rgb(190, 164, 164);
+}
+
+/* .safe {
+    background-image: url(https://icon2.cleanpng.com/20171220/ofw/star-png-image-5a3a7e9651e390.02167008151378293433541614.jpg);
+} */
+.g-start {
+    background-color: green;
+
+}
+.y-start {
+    background-color:yellow;
+
+}
+.r-start {
+    background-color: red;
+}
+.b-start {
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 id="header">King of ludo</h1>
+    <div class="game">
+        <div class="house green">
+            <div class="box">
+                <div class="square square-one green">
+                    
+                </div>
+                <div class="square square-two green">
+
+                </div>
+                <div class="square square-three green"
+                ></div>
+                <div class="square square-four green">
+
+                </div>
+            </div>
+        </div>
+    
+        <div class="house yellow" style="right: 0">
+            <div class="box">
+                <div class="square square-one yellow">
+
+                </div>
+                <div class="square square-two yellow">
+
+                </div>
+                <div class="square square-three yellow">
+
+                </div>
+                <div class="square square-four yellow">
+
+                </div>
+            </div>
+        </div>
+    
+        <div class="house red" style="bottom: 0">
+            <div class="box">
+                <div class="square square-one red">
+
+                </div>
+                <div class="square square-two red">
+
+                </div>
+                <div class="square square-three red">
+
+                </div>
+                <div class="square square-four red">
+
+                </div>
+            </div>
+        </div>
+    
+        <div class="house blue" style="bottom: 0;right: 0">
+            <div class="box">
+                <div class="square square-one blue">
+
+                </div>
+                <div class="square square-two blue">
+
+                </div>
+                <div class="square square-three blue">
+
+                </div>
+                <div class="square square-four blue">
+
+                </div>
+            </div>
+        </div>
+    
+        <div class="home">
+
+        </div>
+        <div class="cells" style="top: 40%;">
+        </div>
+        <div class="cells g-start" style="top: 40%;left:6.66%;">
+        </div>
+        <div class="cells" style="top: 40%;left:13.32%;">
+        </div>
+        <div class="cells" style="top: 40%;left:19.98%;">
+        </div>
+        <div class="cells" style="top: 40%;left:26.64%;">
+        </div>
+        <div class="cells" style="top: 40%;left:33.3%;">
+        </div>
+    
+        <div class="cells" style="top: 0;left:40%;">
+        </div>
+        <div class="cells" style="top: 6.66%;left:40%;">
+        </div>
+        <div class="cells safe" style="top: 13.32%;left:40%;"> 
+            <p style="font-size: 40px;position: relative;bottom: 45px;">&#9734</p>
+        </div>
+        <div class="cells" style="top: 19.98%;left:40%;"> 
+        </div>
+        <div class="cells" style="top: 26.64%;left:40%;"> 
+        </div>
+        <div class="cells" style="top: 33.3%;left:40%;"> 
+        </div>
+    
+        <div class="cells" style="top: 0;left:46.66%;"> 
+        </div>
+        <div class="cells yellow" style="top: 6.66%;left:46.66%;"> 
+        </div>
+        <div class="cells yellow" style="top: 13.32%;left:46.66%;">
+        </div>
+        <div class="cells yellow" style="top: 19.98%;left:46.66%;">
+        </div>
+        <div class="cells yellow" style="top: 26.64%;left:46.66%;">
+        </div>
+        <div class="cells yellow" style="top: 33.3%;left:46.66%;">
+        </div>
+    
+        <div class="cells" style="top: 0;left:53.32%;"> 
+        </div>
+        <div class="cells y-start" style="top: 6.66%;left:53.32%;">
+        </div>
+        <div class="cells" style="top: 13.32%;left:53.32%;">
+        </div>
+        <div class="cells" style="top: 19.98%;left:53.32%;">
+        </div>
+        <div class="cells" style="top: 26.64%;left:53.32%;">
+        </div>
+        <div class="cells" style="top: 33.3%;left:53.32%;">
+        </div>
+    
+        <div class="cells" style="top: 40%; right: 33.3%">
+        </div>
+        <div class="cells" style="top: 40%;right:26.64%;">
+        </div>
+        <div class="cells" style="top: 40%;right:19.98%;">
+        </div>
+        <div class="cells safe" style="top: 40%;right:13.32%;">
+            <p style="font-size: 40px;position: relative;bottom: 13px;">&#9734</p>
+        </div>
+        <div class="cells" style="top: 40%;right:6.66%;">
+        </div>
+        <div class="cells" style="top: 40%;right:0;">
+        </div>
+    
+        <div class="cells blue" style="top: 46.66%; right: 33.3%">
+        </div>
+        <div class="cells blue" style="top: 46.66%;right:26.64%;">
+        </div>
+        <div class="cells blue" style="top: 46.66%;right:19.98%;">
+        </div>
+        <div class="cells blue" style="top: 46.66%;right:13.32%;">
+        </div>
+        <div class="cells blue" style="top: 46.66%;right:6.66%;">
+        </div>
+        <div class="cells" style="top: 46.66%;right:0;">
+        </div>
+    
+        <div class="cells" style="top: 53.32%; right: 33.3%">
+        </div>
+        <div class="cells" style="top: 53.32%;right:26.64%;"
+        ></div>
+        <div class="cells" style="top: 53.32%;right:19.98%;">
+        </div>
+        <div class="cells" style="top: 53.32%;right:13.32%;">
+        </div>
+        <div class="cells b-start" style="top: 53.32%;right:6.66%;">
+        </div>
+        <div class="cells" style="top: 53.32%;right:0;">
+        </div>
+    
+        <div class="cells" style="bottom: 0;left:53.32%;">
+        </div>
+        <div class="cells" style="bottom: 6.66%;left:53.32%;">
+        </div>
+        <div class="cells safe" style="bottom: 13.32%;left:53.32%;">
+            <p style="font-size: 40px;position: relative;bottom: 13px;">&#9734</p>
+        </div>
+        <div class="cells" style="bottom: 19.98%;left:53.32%;">
+        </div>
+        <div class="cells" style="bottom: 26.64%;left:53.32%;">
+        </div>
+        <div class="cells" style="bottom: 33.3%;left:53.32%;">
+        
+        </div>
+        <div class="cells" style="bottom: 0;left:46.66%;">
+        </div>
+        <div class="cells red " style="bottom: 6.66%;left:46.66%;">
+        </div>
+        <div class="cells red" style="bottom: 13.32%;left:46.66%;">
+        </div>
+        <div class="cells red" style="bottom: 19.98%;left:46.66%;">
+        </div>
+        <div class="cells red" style="bottom: 26.64%;left:46.66%;">
+        </div>
+        <div class="cells red" style="bottom: 33.3%;left:46.66%;">
+        </div>
+    
+        <div class="cells" style="bottom: 0;left:40%;">
+        </div>
+        <div class="cells r-start" style="bottom: 6.66%;left:40%;">
+        </div>
+        <div class="cells" style="bottom: 13.32%;left:40%;">
+        </div>
+        <div class="cells" style="bottom: 19.98%;left:40%;">
+        </div>
+        <div class="cells" style="bottom: 26.64%;left:40%;">
+        </div>
+        <div class="cells" style="bottom: 33.3%;left:40%;">
+        </div>
+    
+        <div class="cells" style="top: 53.32%; left: 33.3%">
+        </div>
+        <div class="cells" style="top: 53.32%;left:26.64%;">
+        </div>
+        <div class="cells" style="top: 53.32%;left:19.98%;">
+        </div>
+        <div class="cells safe" style="top: 53.32%;left:13.32%;">
+            <p style="font-size: 40px;position: relative;bottom: 13px;">&#9734</p>
+        </div>
+        <div class="cells" style="top: 53.32%;left:6.66%;">
+        </div>
+        <div class="cells" style="top: 53.32%;left:0;">
+        </div>
+    
+        <div class="cells green" style="top: 46.66%;left: 33.3%">
+        </div>
+        <div class="cells green" style="top: 46.66%;left:26.64%;">
+        </div>
+        <div class="cells green" style="top: 46.66%;left:19.98%;">
+        </div>
+        <div class="cells green" style="top: 46.66%;left:13.32%;">
+        </div>
+        <div class="cells green" style="top: 46.66%;left:6.66%;">
+        </div>
+        <div class="cells" style="top: 46.66%;left:0;">
+        </div>
+    
+    
+    </div>
+    </div>
+</body>
+</html>

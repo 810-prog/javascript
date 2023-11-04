@@ -1,0 +1,14 @@
+table,th,td {
+    background-color: yellowgreen;
+    border: 1px solid rgb(137, 30, 220);
+}
+.aa1{
+    background-color: rgb(197, 169, 57);
+    color: red;
+}
+#aa{
+    color: darkred;
+}
+th{
+    color:darkred;
+}

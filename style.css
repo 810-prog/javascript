@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    background-color: rgb(226, 224, 224);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+   
+
+}
+
+#frist{
+    padding-left: 10px;
+}
+#end{
+    padding-right: 20px;
+}
+
+.snav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+    margin-top: 49px;
+    background-color: white;
+    
+}
+
+#im1{
+    margin-left: 160px;
+}
+
+#im2{
+    margin-right: 160px;
+}
+.im3{
+    width:100%;
+    height: 730px;
+    margin: 0px;
+    padding: 0px;
+}
+.parent{
+    display: flex;
+    margin-left:200px;
+ 
+}
+#card1{
+    border-radius: 20px;
+    width: 350px;
+    height:300px;
+    text-align: center;
+    background-color: rgb(183, 183, 221);
+    padding-top: 25px;
+    line-height: 30px;
+    margin-top: -250px;
+
+}
+
+#card2{
+    border-radius: 20px;
+    width: 350px;
+    height:300px;
+    text-align: center;
+    margin-left: 30px;
+    background-color:rgb(103, 151, 134);
+    padding-top: 25px;
+    line-height: 30px;
+    margin-top: -250px;
+}
+#card3{
+    border-radius: 20px;
+    width: 350px;
+    height:300px;
+    text-align: center;
+    margin-left: 30px;
+    background-color: aqua;
+    padding-top: 25px;
+   line-height: 30px;
+   margin-top: -250px;
+}
+
+.bt1{
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 170px;
+    height:50px ;
+    text-align: center;
+}
+.bt1:hover{
+    background-color: rgb(217, 208, 208);
+    cursor: pointer;
+}
+
+.bt2{
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 170px;
+    height:50px ;
+    text-align: center;
+}
+.bt2:hover{
+    background-color: rgb(217, 208, 208);
+    cursor: pointer;
+}
+
+.bt3{
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 170px;
+    height:50px ;
+    text-align: center;
+}
+.bt3:hover{
+    background-color: rgb(217, 208, 208);
+    cursor: pointer;
+}
+
+.para{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.img4 img{
+    height: 570px;
+   margin-top: 50px;
+    margin-left: 150px;
+    border-radius:15px;
+    display: flex;
+    flex: 0 0 36.66666667%;
+}
+.ram{ 
+    height: 240px;
+    width: 250px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: aqua;
+    justify-content: center;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #33c1ea;    
+    display: flex;
+    margin-top: -510px;
+    margin-right: 540px;
+    flex-direction: column; 
+    display: inline-block;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.ram1{
+    height: 240px;
+    width: 250px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: aqua;
+    justify-content: center;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #33c1ea;    
+    display: flex;
+    margin-top: -190px;
+    margin-right: 220px; 
+    flex-direction: column; 
+    display: inline-block;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+ .shayam{
+        color: #111111;
+        background-color: #e5e5e5;
+        width: 1530px;
+        height: 1000px;
+        margin-top: 400px;
+        text-align: center;
+        padding-top: 80px;
+        font-size: 25px;
+        /* display: flex; */
+       
+}
+.mark{
+    display:inline-block;
+    margin-top: 30px;
+}
+.mark img{
+    border-radius: 15px;
+}
+
+.pai{
+    width: 100%;
+    height: 351px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    background-color: #627dbf;
+    position: relative;
+    flex-shrink: 0px;
+
+}

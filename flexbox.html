@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            height: 800px;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+       
+            /* align-items: center; */
+            /* align-items: end; */
+            
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+        }
+        .card{
+            width: 200px ;
+            height: 150px;
+            background-color: aqua;
+            margin: 10px;
+        }
+        #card1{
+            flex-grow:2;
+        }
+        #card2{
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <center>this is my heading</center>
+    <div class="container">
+        <div class="card" id="card1">one</div>
+        <div class="card" id="card2">two</div>
+        <div class="card" id="card3">three</div>
+        <div class="card" id="card4">four</div>
+    </div>
+</body>
+
+</html>

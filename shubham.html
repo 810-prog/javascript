@@ -1,0 +1,164 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta http-equiv = "Content-Type"  
+            content = "text/html; charset=UTF-8" />  
+        <title> Example of Create a 3D Text Effect using HTML and CSS and jquery </title>  
+        <meta name = "description"  
+            content = "jQuery tooltip plugin" />  
+        <meta content = "width=800, initial-scale=1"  
+        name = "viewport" />  
+<script src =  
+"https://code.jquery.com/jquery-3.5.1.min.js">  
+        </script>               
+        <script src =  
+"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"> </script>          
+<style>  
+h2  {  
+  margin-top: 40px;  
+  text-transform: none;  
+  font-size: 1.75em;  
+  font-weight: bold;  
+   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;  
+  color: rgb(72, 98, 48);   
+  letter-spacing: -0.005em;   
+  word-spacing: 1px;  
+  letter-spacing: none;  
+  text-align: center;  
+}  
+h4  {  
+  margin-top: 40px;  
+  text-transform: none;  
+  font-size: 1.75em;  
+  font-weight: bold;  
+   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;  
+  color: #cc4848;   
+  letter-spacing: -0.005em;   
+  word-spacing: 1px;  
+  letter-spacing: none;  
+  text-align: center;  
+  color: rgb(236, 110, 215);  
+}  
+html {  
+  height: 100%;  
+}  
+body {  
+  overflow: hidden;  
+  margin: 0;  
+  padding: 0;  
+  background: rgba(206,188,155,1);  
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(188, 153, 90)), color-stop(51%, rgba(85,63,50,1)), color-stop(100%, rgba(42,31,25,1)));  
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );  
+}  
+*,  
+*::before,  
+*::after {  
+  box-sizing: border-box;  
+}  
+:root {  
+  --color-primary: #f6aca2;  
+  --color-secondary: #f49b90;  
+  --color-tertiary: #f28b7d;  
+  --color-quaternary: #f07a6a;  
+  --color-quinary: #ee6352;  
+}  
+body {  
+  min-height: 100vh;  
+  font-family: canada-type-gibson, sans-serif;  
+  font-weight: 300;  
+  font-size: 1.25rem;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  overflow: hidden;  
+  background-color: #c0121278;  
+}  
+.content {  
+  display: flex;  
+  align-content: center;  
+  justify-content: center;  
+}  
+.text_shadows {  
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),  
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);  
+  font-family: bungee, sans-serif;  
+  font-weight: 400;  
+  text-transform: uppercase;  
+  font-size: calc(2rem + 5vw);  
+  text-align: center;  
+  margin: 0;  
+  color: var(--color-primary);  
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;  
+  letter-spacing: 0.4rem;  
+}  
+@keyframes shadows {  
+  0% {  
+    text-shadow: none;  
+  }  
+  10% {  
+    text-shadow: 3px 3px 0 var(--color-secondary);  
+  }  
+  20% {  
+    text-shadow: 3px 3px 0 var(--color-secondary),  
+      6px 6px 0 var(--color-tertiary);  
+  }  
+  30% {  
+    text-shadow: 3px 3px 0 var(--color-secondary),  
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);  
+  }  
+  40% {  
+    text-shadow: 3px 3px 0 var(--color-secondary),  
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),  
+      12px 12px 0 var(--color-quinary);  
+  }  
+  50% {  
+    text-shadow: 3px 3px 0 var(--color-secondary),  
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),  
+      12px 12px 0 var(--color-quinary);  
+  }  
+  60% {  
+    text-shadow: 3px 3px 0 var(--color-secondary),  
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),  
+      12px 12px 0 var(--color-quinary);  
+  }  
+  70% {  
+    text-shadow: 3px 3px 0 var(--color-secondary),  
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);  
+  }  
+  80% {  
+    text-shadow: 3px 3px 0 var(--color-secondary),  
+      6px 6px 0 var(--color-tertiary);  
+  }  
+  90% {  
+    text-shadow: 3px 3px 0 var(--color-secondary);  
+  }  
+  100% {  
+    text-shadow: none;  
+  }  
+}  
+@keyframes move {  
+  0% {  
+    transform: translate(0px, 0px);  
+  }  
+  40% {  
+    transform: translate(-12px, -12px);  
+  }  
+  50% {  
+    transform: translate(-12px, -12px);  
+  }  
+  60% {  
+    transform: translate(-12px, -12px);  
+  }  
+  100% {  
+    transform: translate(0px, 0px);  
+  }  
+}  
+</style>  
+<body>  
+<h4> Example </h4>  
+<h2>shubham ❤️bestfriend❤️ dheeraj</h2>  
+<div class = "content">  
+  <h2 class = "text_shadows"> shubham ❤️best friend award❤️ dheeraj </h2>  
+</div>  
+</body>  
+</html>

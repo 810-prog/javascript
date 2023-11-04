@@ -1,0 +1,413 @@
+body {
+    background-color: rgb(232, 227, 227);
+}
+
+.navbar {
+    background-color: rgb(202, 197, 197);
+    color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.nav {
+    display: inline-block;
+}
+
+#div1 {
+    margin-left: 20px;
+}
+
+#div2 {
+    margin-left: 460px;
+}
+
+#div3 {
+    margin-left: 700px;
+    padding-bottom: 15px;
+}
+
+.snavbar {
+    /* background-color: rgb(250, 244, 244); */
+    margin-top: 90px;
+}
+
+#img1 {
+    margin-left: 70px;
+}
+
+#img2 {
+    width: 2%;
+    margin-left: 1100px;
+}
+
+.main {
+    width: 50%;
+    height: 773px;
+    text-align: center;
+    background-color: rgb(166, 0, 255);
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 500%;
+
+}
+
+#main11 {
+    width: 50%;
+    height: 773px;
+    text-align: center;
+    float: right;
+    margin-top: -773px;
+
+}
+
+#box1 {
+    border: 2px solid black;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /* margin: 5px 5px 5px 5px; */
+}
+
+#box2 {
+    border: 2px solid black;
+    position: relative;
+    right: 140px;
+    width: 150px;
+    height: 150px;
+    /* margin: 5px 5px 5px 5px; */
+}
+
+#box3 {
+    border: 2px solid black;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+
+#box4 {
+    border: 2px solid black;
+    position: relative;
+    right: 140px;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+#sty {
+    position: relative;
+    right: 130px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#shp {
+    width: 50%;
+    height: 672px;
+    position: relative;
+    display: flex;
+}
+
+.shap {
+    background-color: #fff;
+    width: 50%;
+    height: 672px;
+    /* border: 2px solid red; */
+    position: relative;
+    left: 760px;
+    bottom: 672px;
+}
+
+#shp1 {
+    background-color: rgb(171, 171, 229);
+    color: rgb(1, 85, 138);
+    border-radius: 40px;
+    padding: 8px 40px;
+    position: relative;
+    left: 50px;
+    top: 150px;
+    font-size: 20px;
+}
+
+#shp2 {
+    position: relative;
+    left: 50px;
+    top: 130px;
+    font-size: 50px;
+}
+
+#shp3 {
+    position: relative;
+    left: 50px;
+    top: 120px;
+    font-size: 20px;
+}
+
+#shp4 {
+    position: relative;
+    left: 50px;
+    top: 125px;
+    font-size: 20px;
+}
+
+#shp5 {
+    position: relative;
+    left: 50px;
+    top: 145px;
+    width: 180px;
+    height: 55px;
+}
+
+#shp6 {
+    position: relative;
+    left: 70px;
+    top: 145px;
+    width: 180px;
+    height: 55px;
+}
+
+.main3 {
+    width: 50%;
+    height: 672px;
+    position: relative;
+    bottom: 705px;
+    background-color: rgb(37, 11, 81);
+}
+
+#shp7 {
+    font-size: 3rem;
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+#shp8 {
+    position: relative;
+    left: 250px;
+    color: #bda3e9;
+    font-size: 1.155rem;
+    top: 150px;
+
+}
+
+#shp9 {
+    position: relative;
+    left: 250px;
+    top: 150px;
+    font-size: 1.155rem;
+    color: #bda3e9;
+}
+
+#shp10 {
+    background-color: rgba(171, 151, 228, 0.64);
+    position: relative;
+    left: 98px;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+    position: relative;
+    top: 230px;
+
+
+}
+
+#shp10:hover {
+    cursor: pointer;
+    background-color: #cd62c6;
+    color: white;
+}
+
+#shp11 {
+    position: relative;
+    left: 760px;
+    bottom: 1377px;
+    width: 50%;
+    height: 672px;
+}
+
+#shp12 {
+    position: relative;
+    bottom: 1340px;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+
+#shp13 {
+    position: relative;
+    bottom: 1360px;
+    text-align: center;
+    font-style: oblique;
+}
+
+#bus {
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    bottom: 1260px;
+    left: 140px;
+    width: 350px;
+    height: 350px;
+}
+
+#shp14 {
+    position: relative;
+    left: 45px;
+    top: 25px;
+    z-index: 2;
+    bottom: 30px;
+
+}
+
+#shp15 {
+    position: relative;
+    left: 30px;
+    bottom: 45px;
+    width: 70px;
+    z-index: 1;
+}
+
+#shp16 {
+    border: 5px solid rgb(64, 64, 142);
+    border-radius: 50%;
+    width: 80px;
+    position: relative;
+    left: 150px;
+    bottom: 30px;
+}
+
+#shp17{
+    text-align: right;
+    padding-right: 10px;
+   font-style: italic;
+}
+
+
+#bus1{
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    bottom: 1630px;
+    left: 540px;
+    width: 350px;
+    height: 350px;
+}
+
+#shp18{
+    position: relative;
+    left: 45px;
+    top: 25px;
+    z-index: 2;
+
+}
+
+#shp19{
+    position: relative;
+    left: 30px;
+    bottom: 55px;
+    width: 70px;
+    z-index: 1;
+}
+
+#shp20{
+    border: 5px solid rgb(64, 64, 142);
+    border-radius: 50%;
+    width: 80px;
+    position: relative;
+    left: 150px;
+    bottom: 30px;
+}
+
+#shp21{
+    text-align: right;
+    padding-right: 10px;
+   font-style: italic;
+}
+
+#bus2{
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    bottom: 2000px;
+    left: 940px;
+    width: 350px;
+    height: 350px;
+}
+
+#shp22{
+    position: relative;
+    left: 45px;
+    top: 25px;
+    bottom: 70px;
+    z-index: 2;
+  
+
+}
+
+#shp23{
+    position: relative;
+    left: 30px;
+    bottom: 90px;
+    width: 70px;
+    z-index: 1;
+}
+
+#shp24{
+    border: 5px solid rgb(64, 64, 142);
+    border-radius:100%;
+    width: 80px;
+    position: relative;
+    left: 150px;
+    bottom: 30px;
+}
+
+#shp25{
+    text-align: right;
+    padding-right: 10px;
+   font-style: italic;
+}
+
+#shp26{
+    /* text-align: center; */
+    position: relative;
+    left: 43%;
+    bottom: 1970px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.main5{
+    border: 3px solid black;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    bottom: 1900px;
+    background-color:#250455;
+} 
+ #shp27{
+    text-align: center;
+    font-size: 60px;
+ }
+
+ #shp28{
+    position: relative;
+    left: 23%;
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 20px;
+    bottom: 20px;
+ }
+
+ #shp29{
+    border: 2px solid black;
+    width: 100%;
+    height: 219px;
+    position: relative;
+    top: 208px;
+    background-color: #a37fdf;
+ }
